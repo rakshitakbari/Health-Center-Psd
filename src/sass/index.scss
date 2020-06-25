@@ -1,0 +1,50 @@
+#hero {
+  background-image: url(../images/slider2.jpg);
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  height: 650px;
+  @media (min-width: 992px){
+    .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
+  }  
+  .caption {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgba(20,20,20,0.2);
+      height: 100%;
+      color: $white;
+      cursor: e-resize;
+      h3 {
+        color: $white;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: inherit;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      h1 {
+        color: $white;
+        padding-bottom: 10px;
+        margin-top: 0;
+        font-size: 5em;
+        font-weight: 600;
+      }
+      a{
+        background: #393939;
+        border: 0;
+        border-radius: 3px;
+        color: $white;
+        font-size: inherit;
+        font-weight: 500;
+        padding: 14px 20px;
+        transition: transform 0.1s ease-in;
+        transform: translateX(0);
+      }
+  }
+}
